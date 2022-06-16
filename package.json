@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "all": "ts-node count.ts"
+  },
   "devDependencies": {
+    "@types/node": "^17.0.43",
     "ts-node": "^10.7.0"
   },
   "dependencies": {

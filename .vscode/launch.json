@@ -9,7 +9,7 @@
       "type": "node",
       "request": "launch",
       "args": [
-        "${workspaceRoot}/动态规划/最后一块石头的重量II.ts"
+        "${workspaceRoot}/count.ts"
       ],
       "runtimeArgs": [
         "-r",
