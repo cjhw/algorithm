@@ -47,3 +47,5 @@ function reverseWords(s: string): string {
   }
   return strArr.join('')
 }
+
+export {}
