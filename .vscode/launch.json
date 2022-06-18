@@ -9,7 +9,7 @@
       "type": "node",
       "request": "launch",
       "args": [
-        "${workspaceRoot}/count.ts"
+        "${workspaceRoot}/回溯算法/N皇后.ts"
       ],
       "runtimeArgs": [
         "-r",

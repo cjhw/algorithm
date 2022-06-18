@@ -17,20 +17,37 @@ let filterDirs: string[] = dirs.filter((dir) => {
   return true
 })
 
-let end: string[] = []
+let arr: string[] = []
 
-filterDirs.forEach((dir) => {
+const isDir = (dir: string) => {
   let stats = fs.statSync('./' + dir)
   let flag = stats.isDirectory()
   if (flag) {
-    end.push(dir)
+    let dirs = readDir(__dirname + '\\' + dir)
+    dirs.forEach((item) => {
+      let newDir = dir + '/' + item
+      isDir(newDir)
+    })
+  } else {
+    arr.push(dir)
   }
+}
+
+const readDir = (dir: string) => {
+  // console.log(dir)
+  let dirs = fs.readdirSync(dir)
+  return dirs
+}
+
+filterDirs.forEach((dir) => {
+  isDir(dir)
 })
 
-let length = 0
-end.forEach((dir) => {
-  let files = fs.readdirSync(dir)
-  length += files.filter((f) => /\.js|\.ts$/.test(f)).length
-})
+let endArr = arr.filter((f) => /\.js$|\.ts$/.test(f))
 
-console.log('一共干了' + length + '道题,噶油~~~~~~!')
+console.log(/\.js|\.ts$/.test('tips.ts'))
+
+let helpSet = new Set(endArr)
+// console.dir(helpSet)
+
+console.log('一共干了' + helpSet.size + '道题,噶油~~~~~~!')
