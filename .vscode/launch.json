@@ -9,7 +9,7 @@
       "type": "node",
       "request": "launch",
       "args": [
-        "${workspaceRoot}/回溯算法/N皇后.ts"
+        "${workspaceRoot}/回溯算法/组合.ts"
       ],
       "runtimeArgs": [
         "-r",
