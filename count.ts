@@ -45,8 +45,6 @@ filterDirs.forEach((dir) => {
 
 let endArr = arr.filter((f) => /\.js$|\.ts$/.test(f))
 
-console.log(/\.js|\.ts$/.test('tips.ts'))
-
 let helpSet = new Set(endArr)
 // console.dir(helpSet)
 

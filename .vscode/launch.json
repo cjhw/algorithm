@@ -9,7 +9,7 @@
       "type": "node",
       "request": "launch",
       "args": [
-        "${workspaceRoot}/回溯算法/组合.ts"
+        "${workspaceRoot}/贪心算法/无重叠区间.ts"
       ],
       "runtimeArgs": [
         "-r",
