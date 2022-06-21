@@ -9,7 +9,7 @@
       "type": "node",
       "request": "launch",
       "args": [
-        "${workspaceRoot}/贪心算法/无重叠区间.ts"
+        "${workspaceRoot}/贪心算法/Dota2参议院.ts"
       ],
       "runtimeArgs": [
         "-r",
