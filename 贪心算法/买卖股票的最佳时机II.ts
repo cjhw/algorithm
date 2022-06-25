@@ -5,3 +5,5 @@ function maxProfit(prices: number[]): number {
   }
   return resProfit
 }
+
+export {}

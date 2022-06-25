@@ -15,3 +15,5 @@ function maxProfit(prices: number[], fee: number): number {
   }
   return result
 }
+
+export {}
