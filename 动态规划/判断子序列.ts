@@ -1,4 +1,5 @@
 function isSubsequence(s: string, t: string): boolean {
+  // dp[i][j] 下标i结尾的字符串，和下标j结尾的字符串，相同子序列的长度
   let m = s.length
   let n = t.length
   let dp = new Array(m + 1).fill(0).map((i) => {
@@ -15,3 +16,5 @@ function isSubsequence(s: string, t: string): boolean {
   }
   return dp[m][n] === m
 }
+
+export {}
