@@ -9,7 +9,7 @@
       "type": "node",
       "request": "launch",
       "args": [
-        "${workspaceRoot}/贪心算法/Dota2参议院.ts"
+        "${workspaceRoot}/面试算法题/字节-异步任务的并发量控制.ts"
       ],
       "runtimeArgs": [
         "-r",
