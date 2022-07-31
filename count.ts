@@ -46,6 +46,6 @@ filterDirs.forEach((dir) => {
 let endArr = arr.filter((f) => /\.js$|\.ts$/.test(f))
 
 let helpSet = new Set(endArr)
-// console.dir(helpSet)
+console.dir(helpSet)
 
 console.log('一共干了' + helpSet.size + '道题,噶油~~~~~~!')
